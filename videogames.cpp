@@ -4,6 +4,7 @@
 
 using namespace std;
 
+//gets the title, year, publisher, and rating from user
 videogames::videogames(const char t[80], int y, const char p[80], int r) : Media(t, y)
 {
   strcpy(publisher, p);
@@ -11,17 +12,20 @@ videogames::videogames(const char t[80], int y, const char p[80], int r) : Media
   rating = r;
 }
 
+//returns publisher
 const char* videogames::getpublisher()
 {
   return publisher;
 }
 
+//returns rating
 int videogames::getrating()
 {
   return rating;
 }
 
-void videogames::printVedioGames()
+//prints out the publisher and rating of the videogame
+void videogames::printVideoGames()
 {
   cout << "Publisher: " << publisher << ", rating: " << rating << endl;
 }
