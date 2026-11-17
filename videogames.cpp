@@ -24,13 +24,11 @@ int videogames::getrating()
   return rating;
 }
 
-//prints out the publisher and rating of the videogame
+//prints out the title, year, publisher and rating of the videogame
 void videogames::printVideoGames()
 {
-  cout << "Publisher: " << publisher << ", rating: " << rating << endl;
+  cout << "Title: " << title << ", year: " << year << ", publisher: " << publisher << ", rating: " << rating << endl;
 }
 
 videogames::~videogames()
-{
-  cout << "Deleting " << title << endl;
-}
+{}

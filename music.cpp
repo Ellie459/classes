@@ -33,10 +33,8 @@ int music::getduration()
 //prints out the publisher, artist, and duration of the music
 void music::printMusic()
 {
-  cout << "Publisher: " << publisher << ", artist: " << artist << ", duration: " << duration << endl;
+  cout << "Title: " << title << ", year: " << year << ", publisher: " << publisher << ", artist: " << artist << ", duration: " << duration << endl;
 }
 
 music::~music()
-{
-  cout << "Deleting " << title << endl;
-}
+{}

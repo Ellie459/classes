@@ -12,12 +12,16 @@ class Media
 
  public:
   // initializes media object with the title and year
- Media(const char t[80], int y);
+  Media(const char t[80], int y);
+
   //gets the title and the year
   const char* gettitle();
   int getyear();
+
   //prints the detail of the specific media
   void printDetails();
+
+  virtual ~Media();
 };
 
 #endif

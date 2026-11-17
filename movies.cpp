@@ -33,10 +33,8 @@ int movies::getrating()
 //prints out the director, duration, and rating of the movie
 void movies::printMovies()
 {
-  cout << "Director: " << director << ", duration: " << duration << ", rating: " << rating << endl;
+  cout << "Title: " << title << ", year: " << year << ", director: " << director << ", duration: " << duration << ", rating: " << rating << endl;
 }
 
 movies::~movies()
-{
-  cout << "Deleting " << title << endl;
-}
+{}
