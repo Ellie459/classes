@@ -135,15 +135,38 @@ int main()
 	  cin >> delete_title;
 	  cout << endl;
 
-	   for (auto it = musicList.begin(); it != musicList.end();)
-            {
-              if (strcmp(delete_title, it -> gettitle()) == 0)
-                {
-                  it = musicList.erase(it);
-                }
-            }
+	  if (strcmp(delete_media, "music") == 0)
+	    {
+	      for (auto it = musicList.begin(); it != musicList.end();)
+		{
+		  if (strcmp(delete_title, it -> gettitle()) == 0)
+		    {
+		      it = musicList.erase(it);
+		    }
+		}
+	    }
+	  else if (strcmp(delete_media, "movies") == 0)
+	    {
+	      for (auto it = moviesList.begin(); it != moviesList.end();)
+		{
+		  if (strcmp(delete_title, it -> gettitle()) == 0)
+		    {
+		      it = moviesList.erase(it);
+		    }
+		}
+	    }
 
-        }
+	  else if (strcmp(delete_media, "videogames") == 0)
+	    {
+	      for (auto it = videogamesList.begin(); it != videogamesList.end();)
+		{
+		  if (strcmp(delete_title, it -> gettitle()) == 0)
+		    {
+		      it = videogamesList.erase(it);
+		    }
+		}
+	    }
+	}
 	
 
       else if (strcmp(option, "SEARCH") == 0)

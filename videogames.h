@@ -16,6 +16,8 @@ public:
   const char* getpublisher(); //gets the publisher
   int getrating(); //gets rating
   void printVideoGames(); //prints out the detail of videogames
+
+  virtual ~videogames();
 };
 
 #endif

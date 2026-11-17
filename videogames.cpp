@@ -29,3 +29,8 @@ void videogames::printVideoGames()
 {
   cout << "Publisher: " << publisher << ", rating: " << rating << endl;
 }
+
+videogames::~videogames()
+{
+  cout << "Deleting " << title << endl;
+}

@@ -35,3 +35,8 @@ void movies::printMovies()
 {
   cout << "Director: " << director << ", duration: " << duration << ", rating: " << rating << endl;
 }
+
+movies::~movies()
+{
+  cout << "Deleting " << title << endl;
+}

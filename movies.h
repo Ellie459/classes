@@ -18,6 +18,8 @@ class movies : public Media
   int getrating();  //return the rating of movie
   void printMovies(); // prints out the details of this movie
 
+  virtual ~movies();
+
 };
 
 #endif
